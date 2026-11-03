@@ -5,6 +5,9 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 
 ## Tampilan
 ![Tampilan beranda portofolio](img/berandamain.png)
+![Tampilan proyek portofolio](img/proyek.png)
+![Tampilan kontak portofolio](img/kontak.png)
+![Tampilan Kalkulator portofolio](img/kalku.png)
 
 ## Fitur
 - Halaman **Beranda** berisi profil, hobi, cita-cita, keahlian, dan
@@ -13,7 +16,6 @@ jadwal belajar
 - Halaman **Kontak** berisi form untuk menghubungi saya
 - Tampilan responsif dengan Flexbox dan *media query*
 - Halaman **Kalkulator** berisi form penilaian nilai Tugas, UTS, dan UAS
-- 
 ## Teknologi
 - HTML5
 - CSS3 (Flexbox dan media query)
@@ -21,7 +23,6 @@ jadwal belajar
 - VSCode dan Live Server
 - JavaScript Dasar (Training)
 - Vercel Upload & Preview
-- 
 ## Tautan
 - Website: https://portofoliov1-bagasarya.vercel.app/
 - Dibuat oleh: Bagas Arya, SMKS Brantas Karangkates
