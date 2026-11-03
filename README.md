@@ -12,12 +12,15 @@ jadwal belajar
 - Halaman **Proyek** berisi daftar proyek dalam bentuk kartu
 - Halaman **Kontak** berisi form untuk menghubungi saya
 - Tampilan responsif dengan Flexbox dan *media query*
+- Halaman **Kalkulator** berisi form penilaian nilai Tugas, UTS, dan UAS
 - 
 ## Teknologi
 - HTML5
 - CSS3 (Flexbox dan media query)
 - Git dan GitHub
 - VSCode dan Live Server
+- JavaScript Dasar (Training)
+- Vercel Upload & Preview
 - 
 ## Tautan
 - Website: https://portofoliov1-bagasarya.vercel.app/

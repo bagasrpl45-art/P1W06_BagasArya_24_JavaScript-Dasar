@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bagas Arya | Kalkulator</title>
+  <link rel="icon" href="img/builder.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/angka.js" defer></script>
+  <script src="js/hitung.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <h1>Bagas Arya</h1>
+      <nav class="menu-laptop">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="kalkulator.html">Kalkulator</a></li>
+        </ul>
+      </nav>
+      <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
+      <details class="menu-ponsel">
+        <summary>Menu</summary>
+        <nav>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="kalkulator.html">Kalkulator</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="kartu">
+        <h2>Kalkulator Nilai</h2>
+        <p>Masukkan nilai tugas, UTS, dan UAS, lalu tekan tombol hitung.</p>
+
+        <form id="kalkulator-form">
+          <p>
+            <label for="tugas">Nilai Tugas</label><br>
+            <input type="Number" id="tugas" name="tugas" min="0" max="100" required>
+          </p>
+          <p>
+            <label for="uts">Nilai UTS</label><br>
+            <input type="Number" id="uts" name="uts" min="0" max="100" required>
+          </p>
+          <p>
+            <label for="uas">Nilai UAS</label><br>
+            <input type="Number" id="uas" name="uas" min="0" max="100" required>
+          </p>
+
+          <button type="button" id="hitung">Hitung</button>
+        </form>
+
+        <div id="hasil"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Kontak: <a href="mailto:bagasrpl45@gmail.com">bagasrpl45@gmail.com</a> |
+      <a href="https://github.com/bagasrpl45-art" target="_blank" rel="noopener noreferrer">GitHub</a> |
+      <a href="https://www.youtube.com/@bagas_rpl" target="_blank" rel="noopener noreferrer">YouTube</a></p>
+    <p>&copy; 2026 Bagas Arya. Dibuat di Kelas Industri SMKS Brantas Karangkates Berkolaborasi dengan UBIG.</p>  
+  </footer>
+    
+</body>
+</html>

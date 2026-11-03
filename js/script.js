@@ -1,5 +1,3 @@
-// Kalkulator nilai rapor di Console
-
 // 1. Pesan pertama ke console
 console.log("Halo, saya Bagas!");
 console.log("Ini latihan JavaScript pertamaku.");
@@ -26,14 +24,18 @@ function predikat(nilai) {
         return "B";
     } else if (nilai >= 70) {
         return "C";
-    } else {
+    } else if (nilai >= 60) {
         return "D";
+    } else if (nilai >= 50) {
+        return "E";
+    } else {
+        return "F";
     }
 }
 
 function rapor(namaSiswa, tugas, uts, uas) {
     const rata = hitungRataRata(tugas, uts, uas);
-    return `${namaSiswa}: rata-rata ${rata}, prediket ${predikat(rata)}`;
+    return `${namaSiswa}: rata-rata ${rata}, predikat ${predikat(rata)}`;
 }
 
 // 4. Hasil nilai Bagas
@@ -64,3 +66,4 @@ console.log(`predikat(69) = ${predikat(69)}`); // D
 console.log(rapor("Bagas", 85, 78, 89));
 console.log(rapor("Sinta", 92, 88, 86));
 console.log(rapor("Budi", 70, 65, 72));
+
