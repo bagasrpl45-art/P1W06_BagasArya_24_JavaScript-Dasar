@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
-  <script src="js/angka.js" defer></script>
+  <script src="js/center.js" defer></script>
 </head>
 <body>
   <header>
@@ -24,6 +23,7 @@
           <li><a href="kalkulator.html">Kalkulator</a></li>
         </ul>
       </nav>
+      <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
       <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
       <details class="menu-ponsel">
         <summary>Menu</summary>
@@ -45,41 +45,15 @@
         <h2>Proyek Saya</h2>
         <p>Kumpulan hasil belajar saya di Kelas Industri UBIG.</p>
 
-        <div class="daftar-kartu">
-          <article class="kartu">
-            <span style="color: red;">HTML</span>
-            <h3>Halaman Profil Pertama</h3>
-            <img src="img/digitalportfolio.png" alt="Tangkapan layar halaman profil Bagas Arya" width="280">
-            <p>Halaman web pertama saya, berisi perkenalan, keahlian, dan kontak. Dibuat dengan HTML dasar dengan tambahan styling CSS. di Minggu 01.</p>
-          </article>
+        <div class="filter">
+          <button type="button" class="tombol-filter" id="filter-semua">Semua</button>
+          <button type="button" class="tombol-filter" id="filter-javascript">JavaScript</button>
+        </div>
+        <p id="jumlah-proyek"></p>
 
-          <article class="kartu">
-            <span style="color: red;">HTML</span>
-            <h3>Form Kontak</h3>
-            <img src="img/kontakpertama.png" alt="Tangkapan layar form kontak berisi nama, email, nomor HP, keperluan, dan pesan" width="280">
-            <p>Form untuk menghubungi saya. Setiap isian memiliki label dan wajib diisi, sehingga browser menolak form yang masih kosong.</p>
-          </article>
-
-          <article class="kartu">
-            <span style="color: red;">HTML</span>
-            <h3>Tabel Jadwal Belajar</h3>
-            <img src="img/tabellium.png" alt="Tangkapan layar tabel jadwal belajar mandiri" width="280">
-            <p>Tabel berisi jadwal belajar mandiri saya setiap minggu, disusun dengan thead dan tbody.</p>
-          </article>
-
-          <article class="kartu">
-            <span style="color: green;">JavaScript</span>
-            <h3>Kalkulator Nilai</h3>
-            <img src="img/kalkulator.png" alt="Tangkapan layar Kalkulator menghitung nilai" width="200">
-            <p>Kalkulator untuk menghitung nilai akhir dari nilai tugas, UTS, dan UAS. Dibuat dengan HTML, CSS, dan JavaScript.</p>
-          </article>
-
-          <article class="kartu">
-            <span style="color: green;">JavaScript</span>
-            <h3>Console JavaScript</h3>
-            <img src="img/console.png" alt="Tangkapan layar berisi hasil uji coba 5 soal di Console" width="200">
-            <p>Hasil uji coba 5 soal JavaScript di Console, berisi perhitungan, pengulangan, dan percabangan.</p>
-          </article>
+        <div class="daftar-kartu" id="daftar-proyek"></div>
+        <p>Proyek di halaman ini dibuat dengan HTML, CSS, dan JavaScript.
+          Pilih tombol kategori di atas untuk melihat proyek per bahasa.</p>
         </div>
       </section>
 
@@ -88,11 +62,17 @@
         <h2>Pertanyaan yang Sering Diajukan</h2>
         <details>
           <summary>Bahasa apa yang dipakai untuk membuat proyek ini?</summary>
-          <p>Semua proyek di halaman ini dibuat dengan HTML. Tampilannya akan saya rapikan dengan CSS mulai Minggu 03.</p>
+          <p>Semua proyek di halaman ini dibuat dengan HTML, CSS, Dan JavaScript.</p>
         </details>
         <details>
           <summary>Apakah saya menerima pesanan pembuatan website?</summary>
           <p>Belum, saya masih belajar. Namun kamu tetap boleh menghubungi saya melalui halaman Kontak.</p>
+        </details>
+        <details>
+          <summary>Apakah saya mengalami kesusahan dalam memahami konsep pemrograman?</summary>
+          <p>Terkadang saya juga mengalami kesusahan, apalagi jika pada saat menentukan logika pemrogramannya, saya harus memastikan kalau setiap baris code
+            berfungsi dengan baik, dan Beroperasi dengan stabil.
+          </p>
         </details>
       </section>
     </div>
