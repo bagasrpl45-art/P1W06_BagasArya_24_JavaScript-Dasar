@@ -6,17 +6,19 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 ## Tampilan
 ![Tampilan beranda portofolio](img/TampilanB.png)
 ![Tampilan proyek portofolio](img/TampilanP.png)
-![Tampilan kontak portofolio](img/TampilanK.png)
-![Tampilan Kalkulator portofolio](img/TampilanKKU.png)
-![Tampilan beranda mode gelap](img/TampilanMG.png)
+![Tampilan proyek tombol js ditekan](img/TampilanK.png)
+![Tampilan kontak portofolio](img/TampilanKKU.png)
+![Tampilan Kalkulator portofolio](img/TampilanKalku.png)
+![Tampilan Beranda Mode Gelap](img/TampilanMG.png)
 
 ## Fitur
 - Halaman **Beranda** berisi profil, hobi, cita-cita, keahlian, dan
 jadwal belajar
-- Halaman **Proyek** berisi daftar proyek dalam bentuk kartu
+- Halaman **Proyek** berisi daftar proyek dalam bentuk kartu dan memiliki tombol menunjukkan proyek dengan jenisnya
 - Halaman **Kontak** berisi form untuk menghubungi saya
 - Tampilan responsif dengan Flexbox dan *media query*
 - Halaman **Kalkulator** berisi form penilaian nilai Tugas, UTS, dan UAS
+- Tombol **Mode Gelap/Terang** yang dapat mengubah tema warna pada suatu HTML
 ## Teknologi
 - HTML5
 - CSS3 (Flexbox dan media query)
