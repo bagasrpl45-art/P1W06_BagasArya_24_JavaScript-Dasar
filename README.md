@@ -4,10 +4,11 @@ Website Portofolio pribadi yang saya buat di Kelas Industri SMKS Brantas Karangk
 Website ini tampil rapi di ponsel, tablet, dan laptop.
 
 ## Tampilan
-![Tampilan beranda portofolio](img/berandamain.png)
-![Tampilan proyek portofolio](img/proyek.png)
-![Tampilan kontak portofolio](img/kontak.png)
-![Tampilan Kalkulator portofolio](img/kalku.png)
+![Tampilan beranda portofolio](img/TampilanB.png)
+![Tampilan proyek portofolio](img/TampilanP.png)
+![Tampilan kontak portofolio](img/TampilanK.png)
+![Tampilan Kalkulator portofolio](img/TampilanKKU.png)
+![Tampilan beranda mode gelap](img/TampilanMG.png)
 
 ## Fitur
 - Halaman **Beranda** berisi profil, hobi, cita-cita, keahlian, dan
@@ -23,6 +24,8 @@ jadwal belajar
 - VSCode dan Live Server
 - JavaScript Dasar (Training)
 - Vercel Upload & Preview
+- Array of Objects
+- DOM Dan Event
 ## Tautan
 - Website: https://portofoliov1-bagasarya.vercel.app/
 - Dibuat oleh: Bagas Arya, SMKS Brantas Karangkates
