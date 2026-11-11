@@ -6,7 +6,9 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 ## Tampilan
 ![Tampilan beranda portofolio](img/TampilanB.png)
 ![Tampilan proyek portofolio](img/P1.png)
-![Tampilan proyek tombol js ditekan](img/P2.png)
+![Tampilan proyek tombol HTML ditekan](img/HTMLPreview.png)
+![Tampilan proyek tombol CSS ditekan](img/CSSPreview.png)
+![Tampilan proyek tombol JS ditekan](img/P2.png)
 ![Tampilan kontak portofolio](img/TampilanKKU.png)
 ![Tampilan Kalkulator portofolio](img/TampilanKalku.png)
 ![Tampilan Beranda Mode Gelap](img/TampilanMG.png)
@@ -19,6 +21,7 @@ jadwal belajar
 - Tampilan responsif dengan Flexbox dan *media query*
 - Halaman **Kalkulator** berisi form penilaian nilai Tugas, UTS, dan UAS
 - Tombol **Mode Gelap/Terang** yang dapat mengubah tema warna pada suatu HTML
+- Tombol **All, HTML, CSS, JavaScript**yang dapat memilih untuk melihat projek mana yang dipilih sesuai dengan kemauan pengguna
 ## Teknologi
 - HTML5
 - CSS3 (Flexbox dan media query)

@@ -126,5 +126,7 @@ function pasangFilter(idTombol, kategori) {
 if (daftarProyek) {
   tampilkanProyek(proyek);
   pasangFilter("#filter-semua", "Semua");
-  pasangFilter("#filter-javascript", "JavaScript");
+  pasangFilter("#filter-HTML", "HTML");
+  pasangFilter("#filter-CSS", "CSS");
+  pasangFilter("#filter-JavaScript", "JavaScript");
 }
