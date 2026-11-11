@@ -5,10 +5,11 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 
 ## Tampilan
 ![Tampilan beranda portofolio](img/TampilanB.png)
-![Tampilan proyek portofolio](img/TampilanP.png)
-![Tampilan proyek tombol js ditekan](img/TampilanK.png)
+![Tampilan proyek portofolio](img/JS1.png)
+![Tampilan proyek tombol js ditekan](img/JS2.png)
 ![Tampilan kontak portofolio](img/TampilanKKU.png)
 ![Tampilan Kalkulator portofolio](img/TampilanKalku.png)
+![Tampilan Beranda Mode Gelap](img/TampilanMG.png)
 
 ## Fitur
 - Halaman **Beranda** berisi profil, hobi, cita-cita, keahlian, dan
@@ -26,7 +27,7 @@ jadwal belajar
 - JavaScript Dasar (Training)
 - Vercel Upload & Preview
 - Array of Objects
-- DOM dan Event
+- DOM Dan Event
 ## Tautan
 - Website: https://portofoliov1-bagasarya.vercel.app/
 - Dibuat oleh: Bagas Arya, SMKS Brantas Karangkates
