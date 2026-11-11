@@ -80,14 +80,14 @@ const proyek = [
   {
     judul: "Kalkulator Nilai Rapor",
     kategori: "JavaScript",
-    gambar: "img/kalkulator.png",
+    gambar: "img/JS1.png",
     alt: "Tangkapan layar hasil kalkulator nilai di Console",
     deskripsi: "Rata-rata dan predikat nilai dengan fungsi JavaScript.",
   },
   {
     judul: "Lima Soal Logika",
     kategori: "JavaScript",
-    gambar: "img/console.png",
+    gambar: "img/JS2.png",
     alt: "Tangkapan layar hasil uji lima soal logika",
     deskripsi: "Lima fungsi logika yang masing-masing diuji masukan.",
   },

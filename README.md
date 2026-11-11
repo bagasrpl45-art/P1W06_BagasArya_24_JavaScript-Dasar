@@ -5,8 +5,8 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 
 ## Tampilan
 ![Tampilan beranda portofolio](img/TampilanB.png)
-![Tampilan proyek portofolio](img/JS1.png)
-![Tampilan proyek tombol js ditekan](img/JS2.png)
+![Tampilan proyek portofolio](img/P1.png)
+![Tampilan proyek tombol js ditekan](img/P2.png)
 ![Tampilan kontak portofolio](img/TampilanKKU.png)
 ![Tampilan Kalkulator portofolio](img/TampilanKalku.png)
 ![Tampilan Beranda Mode Gelap](img/TampilanMG.png)
