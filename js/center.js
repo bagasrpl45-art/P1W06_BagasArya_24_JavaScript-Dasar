@@ -1,27 +1,35 @@
 // JavaScript Portofolio Bagas Arya
 // Dipasang di ketiga halaman dengan defer
 
-// 1. Daftar keahlian dengan (Halaman Beranda)
-const skills = [
-    { nama: "HTML", level: "Menengah" },
-    { nama: "CSS", level: "Menengah" },
-    { nama: "Git dan GitHub", level: "Dasar" },
-    { nama: "Desain poster dengan Canva", level: "Mahir" },
-    { nama: "Mengetik cepat / SpeedTypist", level: "Menengah" },
-];
-skills.push({ nama: "JavaScript", level: "Dasar" });
+// 1. Daftar keahlian dengan (Halaman Beranda), Data dari data/kealihan.json
 
 const daftarSkill = document.querySelector("#daftar-skill");
 const jumlahSkill = document.querySelector("#jumlah-skill");
 
-if (daftarSkill) {
+async function muatKeahlian() {
+  try {
+    const response = await fetch("data/kealihan.json");
+    if (!response.ok) {
+      throw new Error(`Status ${response.status}`);
+    }
+
+    const skills = await response.json();
+
     skills.forEach((skill) => {
-        const item = document.createElement("li");
-        item.textContent = `${skill.nama} (${skill.level})`;
-        daftarSkill.appendChild(item);
+      const item = document.createElement("li");
+      item.textContent = `${skill.nama} (${skill.level})`;
+      daftarSkill.appendChild(item);
     });
-    jumlahSkill.textContent = `Ada ${skills.length} keahlihan yang sedang saya kembangkan.`;
-    
+
+    jumlahSkill.textContent = `Ada ${skills.length} Kealihan yang sedang saya Kembangkan.`;
+    } catch (error) {
+      jumlahSkill.textContent = "Daftar keahlian gagal dimuat.";
+      console.error(error);
+    }
+}
+
+if (daftarSkill) {
+  muatKeahlian();
 }
 
 // 2. Tema gelap (Semua halaman)
@@ -129,4 +137,57 @@ if (daftarProyek) {
   pasangFilter("#filter-HTML", "HTML");
   pasangFilter("#filter-CSS", "CSS");
   pasangFilter("#filter-JavaScript", "JavaScript");
+}
+
+// 5. Repository GitHub Terbaru ( Halaman Proyek )
+const username = "bagasrpl45-art";
+const alamatRepo = `https://api.github.com/users/${username}/repos`;
+const pilihan = "?sort=updated&per_page=6";
+
+const daftarRepo = document.querySelector("#daftar-repo");
+const statusRepo = document.querySelector("#status-repo");
+
+async function ambilRepo() {
+  statusRepo.textContent = "Memuat ...";
+
+  try {
+    const response = await fetch(alamatRepo + pilihan);
+    if (!response.ok) {
+      throw new Error(`Status ${response.status}`);
+    }
+    const repos = await response.json();
+
+    repos.forEach((repo) => {
+      const item = document.createElement("li");
+      const tautan = document.createElement("a");
+      tautan.href = repo.html_url;
+      tautan.target = "_blank";
+      tautan.textContent = repo.name;
+      item.appendChild(tautan);
+      daftarRepo.appendChild(item);
+    });
+
+    statusRepo.textContent = `${repos.length} Repository yang Terakhir Diperbarui:`;
+  } catch (error) {
+    statusRepo.textContent = "Maaf, daftar repositori gagal dimuat. Periksa username atau coba lagi nanti.";
+    console.error(error);
+  }
+  
+
+  const response = await fetch(alamatRepo + pilihan);
+  const repos = await response.json();
+
+  repos.forEach((repo) => {
+    const item = document.createElement("li");
+    const tautan = document.createElement("a");
+    tautan.href = repo.html_url;
+    tautan.target = "_blank";
+    tautan.textContent = repo.name;
+    item.appendChild(tautan);
+    daftarRepo.appendChild(item);
+  });
+}
+
+if (daftarRepo) {
+  ambilRepo();
 }
