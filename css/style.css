@@ -6,11 +6,11 @@
 
 /* Variabel Warna dalam bentuk ROOT */
 :root {
-  --warna-utama: #1D3557;
+  --warna-utama: #8F0000;
   --warna-judul: #1D3557;
-  --warna-aksen: #E63946;
+  --warna-aksen: #002547;
   --warna-tautan: #E63946;
-  --warna-latar: #F1FAEE;
+  --warna-latar: #FFFAC7;
   --warna-teks: #333333;
   --warna-kartu: #FFFFFF;
   --warna-garis: #DDDDDD;
@@ -61,7 +61,7 @@ a {
 /* 3. Wadah, header, dan menu */
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 0 1rem;
 }
 
@@ -155,10 +155,21 @@ main {
 
 .kartu {
   background-color: var(--warna-kartu);
+  margin: 0 auto 1.5rem;
   padding: 1rem;
   margin-bottom: 1.5rem;
   border: 1px solid var(--warna-garis);
   border-radius: 12px;
+}
+
+.kartu-proyek {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background-color: var(--warna-kartu);
+  border: 1px solid var(--warna-garis);
+  overflow-wrap: break-word;
 }
 
 .daftar-kartu {
@@ -303,9 +314,27 @@ footer a {
 
 .tombol-filter {
   padding: 0.5rem 1rem;
-  border: 2px solid var(--warna-garis);
-  background-color: var(--warna-kartu);
-  color: var(--warna-judul);
+  border: 2px solid #8F0000;
+  background-color: #8F0000;
+  color: var(--warna-kartu);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.tombol-filter.aktif {
+  background-color: var(--warna-aksen);
+  border-color: var(--warna-aksen);
+}
+
+body.gelap .tombol-filter {
+  background-color: var(--warna-aksen);
+  border-color: var(--warna-alsen);
+  color: #FFFFFF;
+}
+
+body.gelap .tombol-filter.aktif {
+  background-color: #8F0000;
+  border-color: #8F0000;
+  color: #FFFFFF;
 }
 
 .label {

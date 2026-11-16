@@ -81,21 +81,21 @@ const proyek = [
   {
     judul: "Portofolio Responsif",
     kategori: "CSS",
-    gambar: "img/TampilanHP.png",
+    gambar: "img/PortofolioResponsif.png",
     alt: "Tangkapan layar portofolio di ponsel dan laptop",
     deskripsi: "Rapi di ponsel, tablet, dan laptop dengan Flexbox.",
   },
   {
     judul: "Kalkulator Nilai Rapor",
     kategori: "JavaScript",
-    gambar: "img/JS1.png",
+    gambar: "img/KalkulatorNilaiRapor.png",
     alt: "Tangkapan layar hasil kalkulator nilai di Console",
     deskripsi: "Rata-rata dan predikat nilai dengan fungsi JavaScript.",
   },
   {
     judul: "Lima Soal Logika",
     kategori: "JavaScript",
-    gambar: "img/JS2.png",
+    gambar: "img/LimaSoalLogika.png",
     alt: "Tangkapan layar hasil uji lima soal logika",
     deskripsi: "Lima fungsi logika yang masing-masing diuji masukan.",
   },
@@ -123,6 +123,12 @@ function tampilkanProyek(daftar) {
 function pasangFilter(idTombol, kategori) {
   const tombol = document.querySelector(idTombol);
   tombol.addEventListener("click", () => {
+    document.querySelectorAll(".tombol-filter").forEach((btn) => {
+      btn.classList.remove("aktif");
+    });
+
+    tombol.classList.add("aktif");
+
     if (kategori === "Semua") {
       tampilkanProyek(proyek);
     } else {
@@ -133,6 +139,7 @@ function pasangFilter(idTombol, kategori) {
 
 if (daftarProyek) {
   tampilkanProyek(proyek);
+  document.querySelector("#filter-semua").classList.add("aktif");
   pasangFilter("#filter-semua", "Semua");
   pasangFilter("#filter-HTML", "HTML");
   pasangFilter("#filter-CSS", "CSS");
@@ -142,7 +149,7 @@ if (daftarProyek) {
 // 5. Repository GitHub Terbaru ( Halaman Proyek )
 const username = "bagasrpl45-art";
 const alamatRepo = `https://api.github.com/users/${username}/repos`;
-const pilihan = "?sort=updated&per_page=6";
+const pilihan = "?per_page=100";
 
 const daftarRepo = document.querySelector("#daftar-repo");
 const statusRepo = document.querySelector("#status-repo");
@@ -157,35 +164,29 @@ async function ambilRepo() {
     }
     const repos = await response.json();
 
-    repos.forEach((repo) => {
+    repos.sort((a, b) => b.updated_at.localeCompare(a.updated_at));
+    const enamTeratas = repos.slice(0, 6);
+
+    enamTeratas.forEach((repo) => {
       const item = document.createElement("li");
       const tautan = document.createElement("a");
       tautan.href = repo.html_url;
       tautan.target = "_blank";
       tautan.textContent = repo.name;
+
+      const bahasa = repo.language || "tanpa bahasa";
+      const detail = document.createTextNode(` (${bahasa}, ${repo.stargazers_count} bintang)`);
+
       item.appendChild(tautan);
+      item.appendChild(detail);
       daftarRepo.appendChild(item);
     });
 
-    statusRepo.textContent = `${repos.length} Repository yang Terakhir Diperbarui:`;
+    statusRepo.textContent = `${enamTeratas.length} Repository yang Terakhir Diperbarui:`;
   } catch (error) {
-    statusRepo.textContent = "Maaf, daftar repositori gagal dimuat. Periksa username atau coba lagi nanti.";
+    statusRepo.textContent = "Maaf, daftar Repository gagal Dimuat. Periksa username atau Coba Lagi Nanti.";
     console.error(error);
-  }
-  
-
-  const response = await fetch(alamatRepo + pilihan);
-  const repos = await response.json();
-
-  repos.forEach((repo) => {
-    const item = document.createElement("li");
-    const tautan = document.createElement("a");
-    tautan.href = repo.html_url;
-    tautan.target = "_blank";
-    tautan.textContent = repo.name;
-    item.appendChild(tautan);
-    daftarRepo.appendChild(item);
-  });
+  }  
 }
 
 if (daftarRepo) {
