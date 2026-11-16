@@ -15,22 +15,22 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 ![Tampilan Beranda Mode Gelap](img/DarkModeRemastered.png)
 
 ## Fitur
-- Halaman **Beranda** berisi profil, hobi, cita-cita, keahlian, dan
-jadwal belajar
+- Halaman **Beranda** berisi profil, hobi, cita-cita, keahlian, dan Jadwal Belajar.
 - Halaman **Proyek** berisi daftar proyek dalam bentuk kartu dan memiliki tombol menunjukkan proyek dengan jenisnya
+- Tombol **All, HTML, CSS, JavaScript**yang dapat memilih untuk melihat projek mana yang dipilih sesuai dengan kemauan pengguna
 - **HTML** (Menampilkan proyek Berbasis HTML).
 - **CSS** (Menampilkan proyek Berbasis Responsivitas CSS3 FlexBox).
 - **JavaScript** (Menampilkan proyek berbasis JavaScript).
 - Halaman **Repository GitHub dan beberapa Pertanyaan** Berisi Repository GitHub yang diperbarui secara Real-time dan beberapa ajukan pertanyaan mengenai Berkembangnya proyek ini.
-- Halaman **Kontak** berisi form untuk menghubungi saya
-- Tampilan responsif dengan Flexbox dan *media query*
-- Halaman **Kalkulator** berisi form penilaian nilai Tugas, UTS, dan UAS
-- Tombol **Mode Gelap/Terang** yang dapat mengubah tema warna pada suatu HTML
-- Tombol **All, HTML, CSS, JavaScript**yang dapat memilih untuk melihat projek mana yang dipilih sesuai dengan kemauan pengguna
+- Halaman **Kontak** berisi form untuk menghubungi saya.
+- Halaman **Kalkulator** berisi form penilaian nilai Tugas, UTS, dan UAS.
+- Tampilan **Mode Gelap** Halaman Beranda yang menggunakan Latar Gelap ketika Tombol Mode Gelap Ditekkan.
+- Tombol **Mode Gelap/Terang** yang dapat mengubah tema warna pada suatu HTML.
 -
 ## Teknologi
 - HTML5.
 - CSS3 ( Flexbox dan media query ).
+- Tampilan responsif dengan Flexbox dan *media query*
 - Git dan GitHub.
 - VSCode dan Live Server.
 - JavaScript Dasar.
