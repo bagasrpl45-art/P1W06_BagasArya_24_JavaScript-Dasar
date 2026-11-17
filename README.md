@@ -41,5 +41,5 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 - Fetch API dan ASync / Await ( GitHub REST API ).
 -
 ## Tautan
-- Website: https://portofoliov1-bagasarya.vercel.app/
+- Website: https://tugasrumah-bagasarya.vercel.app/
 - Dibuat oleh: Bagas Arya, SMKS Brantas Karangkates
