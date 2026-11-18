@@ -340,7 +340,7 @@ footer a {
 
 body.gelap .tombol-filter {
   background-color: var(--warna-aksen);
-  border-color: var(--warna-alsen);
+  border-color: var(--warna-aksen);
   color: #FFFFFF;
 }
 
@@ -370,4 +370,13 @@ body.gelap {
   --warna-teks: #E3E8EE;
   --warna-kartu: #1C2836;
   --warna-garis: #34465A;
+}
+
+/* 12. Menahan ruang Kontainer pada Proyek */
+#daftar-proyek {
+  min-height: 650px;
+}
+
+#daftar-repo {
+  min-height: 160px;
 }
