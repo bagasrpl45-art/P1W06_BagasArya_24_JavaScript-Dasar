@@ -245,6 +245,19 @@ button {
   cursor: pointer;
 }
 
+.hampir-penuh {
+  color: var(--warna-aksen);
+}
+.tombol-kedua {
+  color: var(--warna-kartu);
+}
+
+.body-gelap .tombol-kedua {
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: var(--warna-kartu);
+}
+
 /* 7. Footer */
 footer {
   background-color: var(--warna-utama);
