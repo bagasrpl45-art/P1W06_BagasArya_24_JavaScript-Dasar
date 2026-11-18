@@ -92,13 +92,26 @@ nav ul {
   list-style: none;
 }
 
+nav ul li {
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
 nav a {
-  display: inline-block;
+  display: block;
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
   color: #FFFFFF;
   font-weight: 600;
   text-decoration: none;
+}
+
+header nav ul li:hover {
+  background-color: #1D3557;
+}
+
+body.gelap header nav ul li:hover {
+  background-color: #8F0000;
 }
 
 /* Tantangan: menu ponsel buka-tutup dengan details */
@@ -230,6 +243,8 @@ input, select, textarea {
 }
 
 .keterangan {
+  display: block;
+  margin-top: 0.35rem;
   font-size: 0.875rem;
 }
 
@@ -246,16 +261,62 @@ button {
 }
 
 .hampir-penuh {
-  color: var(--warna-aksen);
-}
-.tombol-kedua {
-  color: var(--warna-kartu);
+  color: var(--warna-tautan);
+  font-weight: 600;
 }
 
-.body-gelap .tombol-kedua {
-  color: #FFFFFF;
+.grup-tombol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.grup-tombol button {
+  flex: 1 1 auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.tombol-utama {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  background-color: var(--warna-kartu);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+/* Tombol Kirim Pesan dan Kosongkan Pesan */
+.tombol-utama {
+  background-color: var(--warna-aksen);
+  color: #FFFFFF;
+  border: 2px solid var(--warna-aksen);
+}
+
+.tombol-utama:hover {
+  background-color: var(--warna-utama);
+  border-color: var(--warna-utama);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.tombol-utama:active {
+  transform: translateY(0);
+}
+
+/* Penyesuaian Tombol Kirim dan Kosongkan Pesan pada Dark Mode */
+body.gelap .tombol-utama {
+  background-color: var(--warna-aksen);
+  border-color: var(--warna-judul);
+  color: #FFFFFF;
+}
+
+body.gelap .tombol-utama:hover {
+  background-color: var(--warna-judul);
+  border-color: var(--warna-judul);
+  color: #FFFFFF;
 }
 
 /* 7. Footer */
@@ -316,6 +377,32 @@ footer a {
   border: 2px solid #FFFFFF;
   background-color: transparent;
   font-size: 0.9rem;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.tombol-tema:hover {
+  background-color: #FFFFFF;
+  color: var(--warna-utama);
+  transform: translateY(-2px);
+}
+
+.tombol-tema:active {
+  transform: translateY(0);
+}
+
+/* Tampilan tombol ketika Mode Gelap Aktif */
+body.gelap .tombol-tema {
+  background-color: var(--warna-judul);
+  border-color: var(--warna-judul);
+  color: var(--warna-utama);
+}
+
+body.gelap .tombol-tema:hover {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  color: var(--warna-utama);
 }
 
 .filter {
@@ -379,4 +466,18 @@ body.gelap {
 
 #daftar-repo {
   min-height: 160px;
+}
+
+/* 13. Memperbaiki warna Link Repository pada Mode Gelap */
+#daftar-repo a,
+body.gelap #daftar-repo a {
+  color: #E63946;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#daftar-repo a:hover,
+body.gelap #daftar-repo a:hover {
+  color: #FF6B6B;
+  text-decoration: underline;
 }

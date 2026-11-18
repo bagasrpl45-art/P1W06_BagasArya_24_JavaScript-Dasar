@@ -10,7 +10,7 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 ![Tampilan proyek tombol CSS ditekan](img/CSSActivated.png)
 ![Tampilan proyek tombol JS ditekan](img/JavaScriptActivated.png)
 ![Tampilan Repository GitHub dan Pertanyaan](img/RepositoryAndQuestions.png)
-![Tampilan kontak portofolio](img/KontakRemastered.png)
+![Tampilan kontak portofolio](img/KontakUpdated.png)
 ![Tampilan Kalkulator portofolio](img/KalkulatorRemastered.png)
 ![Tampilan Beranda Mode Gelap](img/DarkModeRemastered.png)
 
@@ -22,7 +22,9 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 - **CSS** (Menampilkan proyek Berbasis Responsivitas CSS3 FlexBox).
 - **JavaScript** (Menampilkan proyek berbasis JavaScript).
 - Halaman **Repository GitHub dan beberapa Pertanyaan** Berisi Repository GitHub yang diperbarui secara Real-time dan beberapa ajukan pertanyaan mengenai Berkembangnya proyek ini.
-- Halaman **Kontak** berisi form untuk menghubungi saya.
+- Halaman **Kontak** berisi form untuk menghubungi saya yang terdapat tombol kirim pesan Serta penambahan Tombol Kosongkan dari uji paket B
+- **Tombol Kirim Pesan** Berguna untuk mengirimkan pesan dan keperluan yang ingin disampaikan melalui form kontak saya.
+- **Tombol Kosongkan Pesan** Berfungsi untuk menghilangkan seluruh text yang telah tersimpan pada form kontak Untuk Memudahkan user.
 - Halaman **Kalkulator** berisi form penilaian nilai Tugas, UTS, dan UAS.
 - Tampilan **Mode Gelap** Halaman Beranda yang menggunakan Latar Gelap ketika Tombol Mode Gelap Ditekkan.
 - Tombol **Mode Gelap/Terang** yang dapat mengubah tema warna pada suatu HTML.
@@ -39,6 +41,8 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 - DOM Dan Event.
 - JSON ( Data Lokal ).
 - Fetch API dan ASync / Await ( GitHub REST API ).
+- Node.js (Work in Progress).
+- NPM dan Next.js (Work in Progress).
 -
 ## Tautan
 - Website: https://tugasrumah-bagasarya.vercel.app/
